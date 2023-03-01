@@ -16,7 +16,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: rgb(23, 23, 33);
+    background-color: rgb(32, 32, 36);
 }
 
 nav ul{
@@ -33,7 +33,8 @@ h1{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
-#main-page{
+.main-page{
+    width: 85vw;
     max-width: 850px;
     display: flex;
     flex-direction: column;
@@ -41,7 +42,7 @@ h1{
     row-gap: 80px;
     align-self: center;
     background-color: rgb(23, 23, 33);
-    padding: 50px;
+    padding: 6vw;
 }
 
 .image-article-box{
@@ -53,6 +54,51 @@ h1{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#projekt-grid{
+    width: 75vw;
+    height: 75vw;
+    max-height: 850px;
+    max-width: 850px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "fs fs fs fs rd rd"
+    "fs fs fs fs s2 s2"
+    "s3 s3 s3 s4 s4 s4";
+
+}
+
+.grid-element{
+    border-radius: 5px;
+    margin: 5px;
+}
+
+#fysik{
+    grid-area: fs;
+    background-color: red;
+}
+
+#rendering{
+    grid-area: rd;
+    background-color: blue;
+}
+
+#sak2{
+    grid-area: s2;
+    background-color: cadetblue;
+}
+
+#sak3{
+    grid-area: s3;
+    background-color: bisque;
+}
+
+#sak4{
+    grid-area: s4;
+    background-color: chocolate;
 }
 
 article{
@@ -70,5 +116,5 @@ img{
 footer{
     width: 100%;
     min-height: 100px;
-    background-color: rgb(23, 23, 33);
+    background-color: rgb(32, 32, 36);
 }
