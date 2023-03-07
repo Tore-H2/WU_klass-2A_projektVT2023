@@ -68,7 +68,10 @@ h1{
     "fs fs fs fs rd rd"
     "fs fs fs fs s2 s2"
     "s3 s3 s3 s4 s4 s4";
+}
 
+#projekt-grid > div {
+    transition: all 0.1s ease;
 }
 
 .grid-element{
