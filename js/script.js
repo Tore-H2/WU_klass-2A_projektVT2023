@@ -12,8 +12,13 @@ gridItems.forEach(item => {
   });
 });
 
+const navbar = document.querySelector('.navbar');
+const burgerMenu = navbar.querySelector('.burger-menu');
+const list = navbar.querySelector('ul');
 
-
-//.
+burgerMenu.addEventListener('click', () => {
+  list.classList.toggle('burger-active');
+  burgerMenu.classList.toggle('active');
+});
 
 
