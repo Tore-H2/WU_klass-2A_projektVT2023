@@ -1,8 +1,11 @@
 const gridItems = document.querySelectorAll('#projekt-grid > div');
 
 gridItems.forEach(item => {
+
+  let widthScale = (item.offsetWidth + 20) / item.offsetWidth;
+
   item.addEventListener('mouseover', () => {
-    item.style.transform = 'scale(1.1)';
+    item.style.transform = `scale(${widthScale})`;
     item.style.zIndex = '1';
   });
   
