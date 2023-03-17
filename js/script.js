@@ -1,10 +1,9 @@
 const gridItems = document.querySelectorAll('.grid-element');
+const gridBox = document.getElementById(`projekt-grid`);
 
 gridItems.forEach(item => {
 
   let widthScale = (item.offsetWidth + 20) / item.offsetWidth;
-
-  
 
   item.addEventListener('mouseover', () => {
     if (!item.classList.contains("expanded")) {

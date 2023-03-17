@@ -93,7 +93,8 @@ nav{
   
 
 h1{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
 }
 
 .main-page{
@@ -125,92 +126,75 @@ h1{
     max-height: 850px;
     max-width: 850px;
     display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
+    grid-template-columns: 3fr 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: 
-    "fs fs fs fs rd rd"
-    "fs fs fs fs s2 s2"
-    "s3 s3 s3 s4 s4 s4";
+    "fs fs rd"
+    "fs fs s2"
+    "s3 s4 s4";
 }
 
 .grid-element{
-  transition: all 0.1s ease;
   border-radius: 5px;
   margin: 5px;
+  transition: transform 0.2s ease;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  row-gap: 50%;
+  text-align: center;
+  pointer-events: auto;
+  overflow: hidden;
+}
+
+.grid-element *{
+  pointer-events: none;
 }
 
 .grid-element.expanded{
-  transition: all 0.1s ease;
   width: 75vw;
   height: 75vw;
   max-height: 850px;
   max-width: 850px;
+  transition: transform 0.2s ease;
 }
 
-.grid-element.hidden{
-  width: 0;
+.grid-element.hidden {
   height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+.grid-element > .spacer{
+  height: 200px;
 }
 
 #fysik{
-    grid-area: fs;
-    background-color: red;
+  grid-area: fs;
+  background-color: red;
 }
 
 #rendering{
-    grid-area: rd;
-    background-color: blue;
+  grid-area: rd;
+  background-color: blue;
 }
 
 #sak2{
-    grid-area: s2;
-    background-color: cadetblue;
+  grid-area: s2;
+  background-color: cadetblue;
 }
 
 #sak3{
-    grid-area: s3;
-    background-color: bisque;
+  grid-area: s3;
+  background-color: bisque;
 }
 
 #sak4{
-    grid-area: s4;
-    background-color: chocolate;
+  grid-area: s4;
+  background-color: chocolate;
 }
-
-.box {
-    position: relative;
-  }
-  
-  .box__image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .box__overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.7);
-    display: none;
-  }
-  
-  .box__overlay--active {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .box__close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    color: #fff;
-    font-size: 24px;
-    cursor: pointer;
-  }
 
 article{
     font-family: sans-serif;
