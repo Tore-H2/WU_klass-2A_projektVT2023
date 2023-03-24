@@ -31,6 +31,10 @@ nav{
         font-size: 20px;
         margin-right: 10px;
     }
+
+    .image-article-box{
+      flex-direction: row;
+    }
   }
   
 @media screen and (max-width: 767px) {
@@ -89,12 +93,21 @@ nav{
       display: block;
       margin: 5px 0;
     }
+
+    .image-article-box{
+      flex-direction: column;
+      align-items: center;
+    }
 }
   
 
 h1{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 40px;
+}
+
+h2{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .main-page{
@@ -196,20 +209,60 @@ h1{
   background-color: chocolate;
 }
 
+#about-portrait{
+  height: 400px;
+  width: 300px;
+  background-color: rebeccapurple;
+}
+
+.element-in-text{
+  display: inline-block;
+  position: relative;
+}
+
+#unity-img{
+  height: 100px;
+  width: 100px;
+  float: right;
+  top: 40px;
+  margin: 5px;
+}
+
+#contact-info{
+  margin: 10px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#contact-info h3{
+  color: gray;
+}
+
+#contact-info ul{
+  list-style: none;
+}
+
+#contact-info ul li{
+  color: gray;
+}
+
 article{
-    font-family: sans-serif;
-    text-align: center;
+    text-align:center;
     width: 60%;
+}
+
+p{
+  font-family: sans-serif;
 }
 
 img{
     background-color: blue;
+    margin: 5px;
     width: 200px;
     height: 250px;
 }
 
 footer{
     width: 100%;
-    min-height: 100px;
+    height: 100px;
     background-color: rgb(32, 32, 36);
 }
