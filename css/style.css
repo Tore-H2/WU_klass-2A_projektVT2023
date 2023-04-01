@@ -20,6 +20,11 @@ nav{
     background-color: rgb(32, 32, 36);
 }
 
+a{
+  font-size: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 @media screen and (min-width: 768px) {
     .navbar ul {
         width: 30vw;
@@ -34,6 +39,15 @@ nav{
 
     .image-article-box{
       flex-direction: row;
+    }
+
+    h2{
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: 25px;
+    }
+
+    p{
+      font-size: 15px;
     }
   }
   
@@ -52,7 +66,7 @@ nav{
       width: 25px;
       height: 3px;
       border-radius: 2px;
-      background-color: black;
+      background-color: lightgray;
       margin-bottom: 5px;
       transition: transform 0.3s ease;
     }
@@ -82,11 +96,11 @@ nav{
       z-index: 1;
       display: flex;
       flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        list-style: none;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 20px;
+      justify-content: space-between;
+      align-items: center;
+      list-style: none;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 20px;
     }
     
     .navbar ul.burger-active li {
@@ -98,16 +112,21 @@ nav{
       flex-direction: column;
       align-items: center;
     }
+
+    h2{
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: 15px;
+    }
+
+    p{
+      font-size: 12px;
+    }
 }
   
 
 h1{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 40px;
-}
-
-h2{
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .main-page{
@@ -125,6 +144,7 @@ h2{
 .image-article-box{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .image-article-box > article{
@@ -136,7 +156,7 @@ h2{
 .image-article-box > img{
   margin: 5px;
   width: auto;
-  height: 15vw;
+  height: 20vw;
 }
 
 #projekt-grid{
@@ -148,9 +168,9 @@ h2{
     grid-template-columns: 3fr 1fr 2fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: 
-    "fs fs rd"
-    "fs fs s2"
-    "ag s4 s4";
+    "fs fs wm"
+    "fs fs rt"
+    "ag rd rd";
 }
 
 .grid-element{
@@ -177,6 +197,7 @@ h2{
 }
 
 .grid-element.expanded{
+  position: absolute;
   width: 75vw;
   height: 75vw;
   max-height: 850px;
@@ -194,6 +215,8 @@ h2{
   height: 200px;
 }
 
+/* Alla bakgrundsbilder i följande grid-element är skapade av mig med hjälp av Stable-Diffusion utom två undantag*/
+
 #fysik{
   grid-area: fs;
   background-image: url("../img/fysik-bild.png");
@@ -201,7 +224,7 @@ h2{
 
 #rendering{
   grid-area: rd;
-  background-color: blue;
+  background-image: url("../img/rendering-bild.png");
 }
 
 #ai-gen{
@@ -209,14 +232,15 @@ h2{
   background-image: url("../img/Ai-bild.png");
 }
 
-#sak2{
-  grid-area: s2;
-  background-color: bisque;
+#rts{
+  grid-area: rt;
+  background-image: url("../img/rts-bild.jpg");
 }
 
-#sak4{
-  grid-area: s4;
+#linux-wm{
+  grid-area: wm;
   background-color: chocolate;
+  background-image: url("../img/WMbild.jpg"); /* Denna bild är tagen av mig på min dator */
 }
 
 #about-portrait{
@@ -237,6 +261,11 @@ h2{
   float: right;
   top: 40px;
   margin: 5px;
+}
+
+#kors-bild{
+  height: 25vw;
+  border-radius: 50%;
 }
 
 #contact-info{
