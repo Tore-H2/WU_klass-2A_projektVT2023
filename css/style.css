@@ -263,7 +263,7 @@ h1{
 
 #rts{
   grid-area: rt;
-  background-image: url("../img/rts-bild.jpg");
+  background-image: url("../img/rts-bild.jpg"); /* Denna bild är tagen från unspash */
 }
 
 #linux-wm{
