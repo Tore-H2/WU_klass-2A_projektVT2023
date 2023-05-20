@@ -192,6 +192,12 @@ h1{
   text-shadow: 1px 1px black;
 }
 
+.grid-element p{
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+}
+
 .grid-element *{
   pointer-events: none;
 }
