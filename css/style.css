@@ -248,28 +248,28 @@ h1{
 
 #fysik{
   grid-area: fs;
-  background-image: url("../img/fysik-bild.png");
+  background-image: url("../img/fysik-bild.webp");
 }
 
 #rendering{
   grid-area: rd;
-  background-image: url("../img/rendering-bild.png");
+  background-image: url("../img/rendering-bild.webp");
 }
 
 #ai-gen{
   grid-area: ag;
-  background-image: url("../img/Ai-bild.png");
+  background-image: url("../img/ai-bild.webp");
 }
 
 #rts{
   grid-area: rt;
-  background-image: url("../img/rts-bild.jpg"); /* Denna bild är tagen från unspash */
+  background-image: url("../img/rts-bild.webp"); /* Denna bild är tagen från unspash */
 }
 
 #linux-wm{
   grid-area: wm;
   background-color: chocolate;
-  background-image: url("../img/WMbild.jpg"); /* Denna bild är tagen av mig på min dator */
+  background-image: url("../img/wm-bild.webp"); /* Denna bild är tagen av mig på min dator */
 }
 
 #about-portrait{
