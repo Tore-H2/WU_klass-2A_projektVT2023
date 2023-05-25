@@ -42,6 +42,7 @@ a{
     }
 
     h2{
+      text-align: center;
       font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
       font-size: 25px;
     }
@@ -205,7 +206,7 @@ h1{
   align-items: center;
   justify-content: space-between;
   row-gap: 50%;
-  text-align: center;
+  text-align: left;
   pointer-events: auto;
   overflow: hidden;
   background-position: center;
@@ -227,6 +228,8 @@ h1{
 .grid-element.expanded{
   position: absolute;
   overflow: scroll;
+  scrollbar-width: thin;
+  overflow-x: hidden;
   width: 75vw;
   height: 75vw;
   max-height: 850px;
@@ -314,8 +317,7 @@ h1{
   color: gray;
 }
 
-article{
-  text-align:center;
+.text-segment{
   width: 60%;
 }
 
@@ -324,7 +326,23 @@ p{
 }
 
 h3{
+  text-align: center;
+  padding-top: 10px;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+ul{
+  font-family: sans-serif;
+}
+
+blockquote {
+  background-color: #131313;
+  border-left: 4px solid rgb(91, 91, 91);
+  border-radius: 5px;
+  margin: 20px 0;
+  padding: 10px 20px;
+  font-style: italic;
+  font-family: sans-serif;
 }
 
 footer{
