@@ -215,10 +215,14 @@ h1{
   text-shadow: 1px 1px black;
 }
 
-.grid-element p{
+.grid-content{
   background-color: rgba(0, 0, 0, 0.4);
   box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.4);
   border-radius: 5px;
+}
+
+.grid-content ul{
+  margin-left: 5%;
 }
 
 .grid-element *{
@@ -333,6 +337,8 @@ h3{
 
 ul{
   font-family: sans-serif;
+  padding-top: 7px;
+  padding-bottom: 7px;
 }
 
 blockquote {
