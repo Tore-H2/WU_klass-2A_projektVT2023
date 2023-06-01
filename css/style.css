@@ -304,8 +304,13 @@ h1{
   border-radius: 50%;
 }
 
-#contact-info{
+address{
   margin: 10px;
+  font-size: 12px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+address *{
   font-family: 'Courier New', Courier, monospace;
 }
 
@@ -359,4 +364,8 @@ footer{
   height: 100px;
   background-color: rgb(32, 32, 36);
   font-size: 12px;
+}
+
+address{
+
 }
